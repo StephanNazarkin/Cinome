@@ -15,11 +15,7 @@ class User(models.Model):
     username = models.CharField(max_length=32, validators=[MinLengthValidator(4)], unique=True)
     image_url = models.FilePathField(blank=True)
     is_email_confirmed = models.BooleanField(default=False)
-
-
-class UserFriends(models.Model):
-    user = models.ForeignKey(User, on_delete=models.RESTRICT)
-    friend = models.ForeignKey(User, on_delete=models.RESTRICT, related_name="friend_relation")
+    friends = models.ManyToManyField("User")
 
 
 class ListType(models.Model):
