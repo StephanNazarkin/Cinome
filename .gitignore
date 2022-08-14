@@ -45,7 +45,7 @@ out/
 atlassian-ide-plugin.xml
 
 # Python # 
-*.py[cod] 
+*.py[cod]
 *$py.class 
 
 # Distribution / packaging 
@@ -171,3 +171,5 @@ packages/react-devtools-extensions/.tempUserDataDir
 packages/react-devtools-inline/dist
 packages/react-devtools-shell/dist
 packages/react-devtools-timeline/dist
+
+cinome/cinomedjango/cinomeapi/settings.py
